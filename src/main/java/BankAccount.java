@@ -12,10 +12,17 @@ public class BankAccount {
     /*
      * You may want to use this to distinguish between different kinds of accounts.
      */
+    /**
+     * This documents bank account type.
+     */
     public enum BankAccountType {
+        /** checkings account. */
         CHECKINGS,
+        /** savings account. */
         SAVINGS,
+        /** student account. */
         STUDENT,
+        /** workplace account. */
         WORKPLACE
     }
 
@@ -30,9 +37,35 @@ public class BankAccount {
         /*
          * Implement this function
          */
+        this.ownerName = name;
+        this.accountType = accountCategory;
     }
 
     /*
      * Implement getters and setters as appropriate for private variables.
      */
+    public void setAccountNumber(int num) {
+        this.accountNumber = num;
+    }
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+    public void setBalance(double amount) {
+        accountBalance = amount;
+    }
+    public double getBalance() {
+        return accountBalance;
+    }
+    public void setOwnerName(String name) {
+        ownerName = name;
+    }
+    public String getOwnderName() {
+        return ownerName;
+    }
+    public void setInterestEarner(double earned) {
+        interestEarned = earned;
+    }
+    public double getInterestEarned() {
+        return interestEarned;
+    }
 }
