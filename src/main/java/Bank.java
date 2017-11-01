@@ -10,7 +10,7 @@
 public class Bank {
 
     /**
-     * The name of bank.
+     * The name of the bank.
      */
     public String bankName;
     /**
